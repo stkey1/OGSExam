@@ -12,5 +12,5 @@ public interface IVehicleManager {
     String[] plateMaking();
     int payment();
     int totalCharge();
-    int ceza();
+    int penalty();
 }

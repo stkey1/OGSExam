@@ -113,7 +113,7 @@ public class VehicleManager implements IVehicleManager {
      * @return penalty
      */
     @Override
-    public int ceza() {
+    public int penalty() {
         return penalty;
     }
 }

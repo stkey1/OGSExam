@@ -102,8 +102,8 @@ public class BoxOfficeManager2 {
         }
 
         System.out.println("\n" + Result.TOTALVEHICLE.s + (minibus.totalVehicle+ car.totalVehicle+ bus.totalVehicle) + " \n" + Result.REVENUE.s + admin.report(counter)+ " TL"+
-                "\n" + Result.NOTOGS.s + (counterHaveNotOGSCar + counterHaveNotBus + counterHaveNotOGSMinibus) + " \n "+ Result.PENALTY.s + (counterHaveNotOGSCar * car.ceza()+ counterHaveNotOGSMinibus *minibus.ceza() + counterHaveNotBus * bus.ceza())*2 +
-                "\n"+ Result.NOTBALANCE.s + (counterHaveNotBalanceCar + counterHaveNotBalanceMinibus + counterHaveNotBalanceBus) + " \n"+ Result.BALANCEPENALTY.s + (counterHaveNotBalanceCar * car.ceza()+ counterHaveNotBalanceMinibus * minibus.ceza()+ counterHaveNotBalanceBus * bus.ceza()));
+                "\n" + Result.NOTOGS.s + (counterHaveNotOGSCar + counterHaveNotBus + counterHaveNotOGSMinibus) + " \n "+ Result.PENALTY.s + (counterHaveNotOGSCar * car.penalty()+ counterHaveNotOGSMinibus *minibus.penalty() + counterHaveNotBus * bus.penalty())*2 +
+                "\n"+ Result.NOTBALANCE.s + (counterHaveNotBalanceCar + counterHaveNotBalanceMinibus + counterHaveNotBalanceBus) + " \n"+ Result.BALANCEPENALTY.s + (counterHaveNotBalanceCar * car.penalty()+ counterHaveNotBalanceMinibus * minibus.penalty()+ counterHaveNotBalanceBus * bus.penalty()));
 
 
         System.out.println("\n\n" + Result.ACAR.s  + car.payment + " TL" +
