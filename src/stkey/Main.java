@@ -16,7 +16,6 @@ public class Main {
         //Created BoxOfficeManager' object
         BoxOfficeManager boxOfficeManager = new BoxOfficeManager();
         boxOfficeManager.BoxOfficeManager();
-        //For test, empty object is created from EmptyClass
         FirstClass car = new FirstClass();
         //Created BoxOfficeManager2's object
         BoxOfficeManager2 boxOfficeManager2 = new BoxOfficeManager2();
