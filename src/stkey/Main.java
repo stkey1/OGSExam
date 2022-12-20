@@ -1,4 +1,7 @@
 package stkey;
+
+import java.sql.Connection;
+
 /**
  * OGS software system is created for exam
  * @version 0.0.1
@@ -21,5 +24,8 @@ public class Main {
         BoxOfficeManager2 boxOfficeManager2 = new BoxOfficeManager2();
         boxOfficeManager2.BoxOfficeManager2(Object);
         boxOfficeManager2.BoxOfficeManager2(car);
+        Connection connection = null;
+        connection = PostgreSQLJDBC.getConnection();
+        PostgreSQLJDBC.getDataSelect(connection);
     }
 }
